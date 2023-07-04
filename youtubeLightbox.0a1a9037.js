@@ -212,12 +212,12 @@ var WorkWithUs = /*#__PURE__*/function () {
     key: "addListenerForChangingComponents",
     value: function addListenerForChangingComponents() {
       var _this = this;
-      var strata = document.getElementById('strata');
-      var manue = document.getElementById('manue');
-      var serenity = document.getElementById('serenity');
-      var prostor = document.getElementById('prostor');
-      var malina = document.getElementById('malina');
-      var dragon = document.getElementById('dragon');
+      var strata = document.querySelector('.strata');
+      var manue = document.querySelector('.manue');
+      var serenity = document.querySelector('.serenity');
+      var prostor = document.querySelector('.prostor');
+      var malina = document.querySelector('.malina');
+      var dragon = document.querySelector('.dragon');
       var allButtons = document.querySelectorAll('.work-with-us__item');
       strata.addEventListener('click', function () {
         var _iterator = _createForOfIteratorHelper(allButtons),
@@ -512,7 +512,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54988" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56790" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

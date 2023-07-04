@@ -117,13 +117,32 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"components/menuBurger/MenuBurger.js":[function(require,module,exports) {
+})({"components/menuBurger/img/logo.svg":[function(require,module,exports) {
+module.exports = "/logo.51319ebb.svg";
+},{}],"components/menuBurger/img/mich0.png":[function(require,module,exports) {
+module.exports = "/mich0.92718c9d.png";
+},{}],"components/menuBurger/img/mich1.png":[function(require,module,exports) {
+module.exports = "/mich1.290c190e.png";
+},{}],"components/menuBurger/img/mich2.png":[function(require,module,exports) {
+module.exports = "/mich2.c024de45.png";
+},{}],"components/menuBurger/img/mich3.png":[function(require,module,exports) {
+module.exports = "/mich3.e4c51090.png";
+},{}],"components/menuBurger/img/mich4.png":[function(require,module,exports) {
+module.exports = "/mich4.57eb3a81.png";
+},{}],"components/menuBurger/MenuBurger.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _logo = _interopRequireDefault(require("../menuBurger/img/logo.svg"));
+var _mich = _interopRequireDefault(require("../menuBurger/img/mich0.png"));
+var _mich2 = _interopRequireDefault(require("../menuBurger/img/mich1.png"));
+var _mich3 = _interopRequireDefault(require("../menuBurger/img/mich2.png"));
+var _mich4 = _interopRequireDefault(require("../menuBurger/img/mich3.png"));
+var _mich5 = _interopRequireDefault(require("../menuBurger/img/mich4.png"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -136,58 +155,69 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 var MenuBurger = /*#__PURE__*/function () {
   function MenuBurger() {
     _classCallCheck(this, MenuBurger);
-    this.content = document.querySelector('.content');
-    this.burger = document.querySelector('.menu-burger__visible-elem');
-    this.mainContainer = document.querySelector('.menu-burger__main-container');
-    this.imgContainer = document.querySelector('.menu-burger__michael-container');
-    this.imgs = this.imgContainer.querySelectorAll('img');
+    // this.content = document.querySelector('.content');
+    // this.contentAnorherPage = document.querySelector('.content-another-page');
     this.michIsReady = false;
   }
   _createClass(MenuBurger, [{
+    key: "render",
+    value: function render() {
+      var REACT_MENU = document.querySelector('.menu-burger');
+      var htmlContent = '';
+      htmlContent = " \n            <div class=\"menu-burger__visible-elem\">\n            <div class=\"menu-burger__icon\">\n                <span></span>\n            </div>\n            </div>\n            <div class=\"menu-burger__main-container\">\n                <a href=\"#\" ><img src=".concat(_logo.default, " alt=\"logo\" class=\"menu-burger__logo _smooth-link\" data-goto=\".main-page\"></a> \n                <nav class=\"menu-burger__navigation\">\n                    <ul class=\"menu-burger__container\">\n                        <li class=\"menu-burger__item\"><a href=\"../../index.html#main-page\" ><span>\u0413\u043B\u0430\u0432\u043D\u0430\u044F</span></a></li>\n                        <li class=\"menu-burger__item\"><a href=\"../../index.html#our-service\"><span>\u041D\u0430\u0448\u0438 \u0443\u0441\u043B\u0443\u0433\u0438</span></a></li>\n                        <li class=\"menu-burger__item\"><a href=\"../../index.html#why\"><span>\u041F\u043E\u0447\u0435\u043C\u0443 \u043C\u044B?</span></a></li>\n                        <li class=\"menu-burger__item\"><a href=\"../../index.html#work-with-us\"><span>\u0420\u0435\u043A\u043B\u0430\u043C\u043E\u0434\u0430\u0442\u0435\u043B\u0438</span></a></li>\n                        <li class=\"menu-burger__item\"><a href=\"../../index.html#our-team\"><span>\u041D\u0430\u0448\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0430</span></a></li>\n                        <li class=\"menu-burger__item\"><a href=\"../../index.html#cases\"><span>\u041A\u0435\u0439\u0441\u044B</span></a></li>\n                        <li class=\"menu-burger__item\"><a href=\"../../index.html#footer\"><span>\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B</span></a></li>\n                    </ul>\n                </nav>\n                <div class=\"menu-burger__copyright\">\n                    <div class=\"menu-burger__line\"></div>\n                    <a href=\"https://vk.com/encendedor0111\" target=\"_blank\" class=\"menu-burger__michael-container\">\n                        <div class=\"menu-burger__img-container\" data-mich-container=\"true\">\n                            <img src=").concat(_mich.default, " alt=\"michael\" class=\"menu-burger__img _startMich\">\n                            <img src=").concat(_mich2.default, " alt=\"michael\" class=\"menu-burger__img hidden\">\n                            <img src=").concat(_mich3.default, " alt=\"michael\" class=\"menu-burger__img hidden\">\n                            <img src=").concat(_mich4.default, " alt=\"michael\" class=\"menu-burger__img hidden\">\n                            <img src=").concat(_mich5.default, " alt=\"michael\" class=\"menu-burger__img hidden _finishMich\">\n                        </div>\n                        <p class=\"menu-burger__michael-name\">Michael</p>\n                    </a>\n                    <div class=\"menu-burger__line\"></div>\n                </div>\n            </div>\n        ");
+      REACT_MENU.innerHTML = htmlContent;
+    }
+  }, {
     key: "clickOnBurger",
     value: function clickOnBurger() {
-      var _this = this;
-      this.burger.addEventListener('click', function () {
-        _this.mainContainer.classList.add('visible');
+      var burger = document.querySelector('.menu-burger__visible-elem');
+      var mainContainer = document.querySelector('.menu-burger__main-container');
+      burger.addEventListener('click', function () {
+        mainContainer.classList.add('visible');
       });
     }
   }, {
     key: "removeBurger",
     value: function removeBurger() {
-      var _this2 = this;
-      this.content.addEventListener('mouseover', function () {
-        _this2.mainContainer.classList.remove('visible');
-      });
+      var mainContainer = document.querySelector('.menu-burger__main-container');
+      var content = '';
+      if (document.querySelector('.content')) {
+        content = document.querySelector('.content');
+        content.addEventListener('mouseover', function () {
+          mainContainer.classList.remove('visible');
+        });
+      }
     }
   }, {
     key: "changeImg",
     value: function changeImg() {
-      var _this3 = this;
+      var _this = this;
       var startLinks = document.querySelectorAll('._startMich');
       var finishLinks = document.querySelectorAll('._finishMich');
+      var imgs = document.querySelector('.menu-burger__michael-container').querySelectorAll('img');
       var _iterator = _createForOfIteratorHelper(startLinks),
         _step;
       try {
         for (_iterator.s(); !(_step = _iterator.n()).done;) {
           var link = _step.value;
           link.addEventListener('mouseover', function (event) {
-            if (!_this3.michIsReady) {
+            if (!_this.michIsReady) {
               setTimeout(function () {
-                _this3.imgs[0].classList.add('hidden');
-                _this3.imgs[1].classList.remove('hidden');
+                imgs[0].classList.add('hidden');
+                imgs[1].classList.remove('hidden');
               }, 50);
               setTimeout(function () {
-                _this3.imgs[1].classList.add('hidden');
-                _this3.imgs[2].classList.remove('hidden');
+                imgs[1].classList.add('hidden');
+                imgs[2].classList.remove('hidden');
               }, 100);
               setTimeout(function () {
-                _this3.imgs[2].classList.add('hidden');
-                _this3.imgs[3].classList.remove('hidden');
+                imgs[2].classList.add('hidden');
+                imgs[3].classList.remove('hidden');
               }, 150);
               setTimeout(function () {
-                _this3.imgs[3].classList.add('hidden');
-                _this3.imgs[4].classList.remove('hidden');
-                _this3.michIsReady = true;
+                imgs[3].classList.add('hidden');
+                imgs[4].classList.remove('hidden');
+                _this.michIsReady = true;
               }, 200);
             }
             ;
@@ -204,23 +234,23 @@ var MenuBurger = /*#__PURE__*/function () {
         for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
           var _link = _step2.value;
           _link.addEventListener('mouseout', function (event) {
-            if (_this3.michIsReady) {
+            if (_this.michIsReady) {
               setTimeout(function () {
-                _this3.imgs[4].classList.add('hidden');
-                _this3.imgs[3].classList.remove('hidden');
+                imgs[4].classList.add('hidden');
+                imgs[3].classList.remove('hidden');
               }, 50);
               setTimeout(function () {
-                _this3.imgs[3].classList.add('hidden');
-                _this3.imgs[2].classList.remove('hidden');
+                imgs[3].classList.add('hidden');
+                imgs[2].classList.remove('hidden');
               }, 100);
               setTimeout(function () {
-                _this3.imgs[2].classList.add('hidden');
-                _this3.imgs[1].classList.remove('hidden');
+                imgs[2].classList.add('hidden');
+                imgs[1].classList.remove('hidden');
               }, 150);
               setTimeout(function () {
-                _this3.imgs[1].classList.add('hidden');
-                _this3.imgs[0].classList.remove('hidden');
-                _this3.michIsReady = false;
+                imgs[1].classList.add('hidden');
+                imgs[0].classList.remove('hidden');
+                _this.michIsReady = false;
               }, 200);
             }
             ;
@@ -268,7 +298,7 @@ var MenuBurger = /*#__PURE__*/function () {
 ;
 var _default = new MenuBurger();
 exports.default = _default;
-},{}],"node_modules/ssr-window/ssr-window.esm.js":[function(require,module,exports) {
+},{"../menuBurger/img/logo.svg":"components/menuBurger/img/logo.svg","../menuBurger/img/mich0.png":"components/menuBurger/img/mich0.png","../menuBurger/img/mich1.png":"components/menuBurger/img/mich1.png","../menuBurger/img/mich2.png":"components/menuBurger/img/mich2.png","../menuBurger/img/mich3.png":"components/menuBurger/img/mich3.png","../menuBurger/img/mich4.png":"components/menuBurger/img/mich4.png"}],"node_modules/ssr-window/ssr-window.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10361,37 +10391,55 @@ var Feedback = /*#__PURE__*/function () {
     key: "open",
     value: function open() {
       this.render();
-      document.querySelector('.modal__body').classList.add('open'); // анимации появления окна
-      document.querySelector('.modal').classList.add('open');
+      var modalWindows = document.querySelectorAll('.modal__body');
+      var _iterator2 = _createForOfIteratorHelper(modalWindows),
+        _step2;
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var body = _step2.value;
+          body.classList.add('open');
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+      var modals = document.querySelectorAll('.modal');
+      var _iterator3 = _createForOfIteratorHelper(modals),
+        _step3;
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var modal = _step3.value;
+          modal.classList.add('open');
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
     }
   }, {
     key: "close",
     value: function close() {
-      var modal = document.querySelector('.modal');
-      var modalWindow = document.querySelector('.modal__body');
-      if (modal) {
-        modalWindow.classList.remove('open');
-        modalWindow.parentElement.classList.remove('open');
-        modalWindow.classList.add('disappearance');
-        modalWindow.parentElement.classList.add('disappearance');
-        setTimeout(function () {
-          modalWindow.classList.remove('disappearance');
-          modalWindow.parentElement.classList.remove('disappearance');
-          var _iterator2 = _createForOfIteratorHelper(_var.ROOT_MODALS),
-            _step2;
-          try {
-            for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-              var ROOT_MODAL = _step2.value;
-              ROOT_MODAL.innerHTML = '';
-            }
-          } catch (err) {
-            _iterator2.e(err);
-          } finally {
-            _iterator2.f();
-          }
-        }, 300);
+      var modals = document.querySelectorAll('.modal');
+      var modalWindows = document.querySelectorAll('.modal__body');
+      var _loop = function _loop(i) {
+        if (modals[i]) {
+          modalWindows[i].classList.remove('open');
+          modalWindows[i].parentElement.classList.remove('open');
+          modalWindows[i].classList.add('disappearance');
+          modalWindows[i].parentElement.classList.add('disappearance');
+          setTimeout(function () {
+            modalWindows[i].classList.remove('disappearance');
+            modalWindows[i].parentElement.classList.remove('disappearance');
+            _var.ROOT_MODALS[i].innerHTML = '';
+          }, 300);
+        }
+        ;
+      };
+      for (var i = 0; i < modals.length; i++) {
+        _loop(i);
       }
-      ;
     }
   }, {
     key: "sendForm",
@@ -10433,17 +10481,17 @@ var Feedback = /*#__PURE__*/function () {
                 setTimeout(function () {
                   modalWindow.classList.remove('disappearance');
                   modalWindow.parentElement.classList.remove('disappearance');
-                  var _iterator3 = _createForOfIteratorHelper(_var.ROOT_MODALS),
-                    _step3;
+                  var _iterator4 = _createForOfIteratorHelper(_var.ROOT_MODALS),
+                    _step4;
                   try {
-                    for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-                      var ROOT_MODAL = _step3.value;
+                    for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+                      var ROOT_MODAL = _step4.value;
                       ROOT_MODAL.innerHTML = '';
                     }
                   } catch (err) {
-                    _iterator3.e(err);
+                    _iterator4.e(err);
                   } finally {
-                    _iterator3.f();
+                    _iterator4.f();
                   }
                 }, 300);
               }
@@ -10621,12 +10669,12 @@ var WorkWithUs = /*#__PURE__*/function () {
     key: "addListenerForChangingComponents",
     value: function addListenerForChangingComponents() {
       var _this = this;
-      var strata = document.getElementById('strata');
-      var manue = document.getElementById('manue');
-      var serenity = document.getElementById('serenity');
-      var prostor = document.getElementById('prostor');
-      var malina = document.getElementById('malina');
-      var dragon = document.getElementById('dragon');
+      var strata = document.querySelector('.strata');
+      var manue = document.querySelector('.manue');
+      var serenity = document.querySelector('.serenity');
+      var prostor = document.querySelector('.prostor');
+      var malina = document.querySelector('.malina');
+      var dragon = document.querySelector('.dragon');
       var allButtons = document.querySelectorAll('.work-with-us__item');
       strata.addEventListener('click', function () {
         var _iterator = _createForOfIteratorHelper(allButtons),
@@ -10935,14 +10983,123 @@ var LoginovaDetail = /*#__PURE__*/function () {
 ;
 var _default = new LoginovaDetail();
 exports.default = _default;
-},{"../../libs/youtubeLightbox/youtubeLightbox":"libs/youtubeLightbox/youtubeLightbox.js"}],"components/workWithUs/loginova/loginova.js":[function(require,module,exports) {
+},{"../../libs/youtubeLightbox/youtubeLightbox":"libs/youtubeLightbox/youtubeLightbox.js"}],"components-m/header-m/header-m.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _mich = _interopRequireDefault(require("../../components/menuBurger/img/mich0.png"));
+var _logo = _interopRequireDefault(require("../../components/menuBurger/img/logo.svg"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var HeaderM = /*#__PURE__*/function () {
+  function HeaderM() {
+    _classCallCheck(this, HeaderM);
+    this.REACT_MENU = document.querySelector('.header-m__react-menu');
+  }
+  _createClass(HeaderM, [{
+    key: "render",
+    value: function render() {
+      var htmlContent = '';
+      htmlContent = " \n        <div class=\"header-m__wrapper\">\n            <div class=\"header-m__burger-container\">\n                <div class=\"header-m__logo-burger\">\n                    <img src=".concat(_logo.default, " alt=\"logo\">\n                </div>\n                <nav class=\"header-m__navigation\">\n                    <ul class=\"header-m__list\">\n                        <li><a href=\"../../index.html#main-page-m\" ><span>\u0413\u043B\u0430\u0432\u043D\u0430\u044F</span></a></li>\n                        <li><a href=\"../../index.html#our-service-m\"><span>\u041D\u0430\u0448\u0438 \u0443\u0441\u043B\u0443\u0433\u0438</span></a></li>\n                        <li><a href=\"../../index.html#why-m\"><span>\u041F\u043E\u0447\u0435\u043C\u0443 \u043C\u044B?</span></a></li>\n                        <li><a href=\"../../index.html#work-with-us-m\"><span>\u0420\u0435\u043A\u043B\u0430\u043C\u043E\u0434\u0430\u0442\u0435\u043B\u0438</span></a></li>\n                        <li><a href=\"../../index.html#our-team-m\"><span>\u041D\u0430\u0448\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0430</span></a></li>\n                        <li><a href=\"../../index.html#cases-m\"><span>\u041A\u0435\u0439\u0441\u044B</span></a></li>\n                        <li><a href=\"../../index.html#footer-m\"\"><span>\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B</span></a></li>\n                    </ul>\n                </nav>\n                <div class=\"header-m__copyright\">\n                    <div class=\"header-m__line\"></div>\n                    <a href=\"https://vk.com/encendedor0111\" target=\"_blank\" class=\"header-m__mich\">\n                        <div class=\"header-m__img-container\">\n                            <img src=").concat(_mich.default, " alt=\"michael\">\n                        </div>\n                        <p class=\"header-m__michael-name\">Michael</p>\n                    </a>\n                    <div class=\"header-m__line\"></div>\n                </div>\n            </div>\n        </div>\n            \n        ");
+      this.REACT_MENU.innerHTML = htmlContent;
+    }
+  }, {
+    key: "clickOnBurger",
+    value: function clickOnBurger() {
+      var _this = this;
+      var content = document.querySelector('body');
+      var burger = document.querySelector('.header-m__icon');
+      burger.addEventListener('click', function () {
+        if (!burger.classList.contains('_moving')) {
+          if (document.querySelector('.header-m__react-menu')) {
+            _this.render();
+          }
+          var wrapper = document.querySelector('.header-m__wrapper');
+          wrapper.classList.remove('hidden');
+          wrapper.classList.add('_open');
+          burger.classList.add('_moving');
+          content.style.overflow = 'hidden';
+        } else {
+          var _wrapper = document.querySelector('.header-m__wrapper');
+          _wrapper.classList.remove('_open');
+          burger.classList.remove('_moving');
+          content.style.overflow = 'visible';
+          if (document.querySelector('.header-m__react-menu')) {
+            setTimeout(function () {
+              _this.REACT_MENU.innerHTML = '';
+            }, 300);
+          } else {
+            setTimeout(function () {
+              _wrapper.classList.add('hidden');
+            }, 300);
+          }
+        }
+        ;
+      });
+    }
+  }, {
+    key: "clickOnMenuItem",
+    value: function clickOnMenuItem() {
+      var _this2 = this;
+      var menuItems = document.querySelector('.header-m__list').children;
+      var burger = document.querySelector('.header-m__icon');
+      var content = document.querySelector('body');
+      var _iterator = _createForOfIteratorHelper(menuItems),
+        _step;
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var item = _step.value;
+          item.addEventListener('click', function () {
+            var wrapper = document.querySelector('.header-m__wrapper');
+            wrapper.classList.remove('_open');
+            burger.classList.remove('_moving');
+            content.style.overflow = 'visible';
+            if (document.querySelector('.header-m__react-menu')) {
+              setTimeout(function () {
+                _this2.REACT_MENU.innerHTML = '';
+              }, 300);
+            } else {
+              setTimeout(function () {
+                wrapper.classList.add('hidden');
+              }, 300);
+            }
+            ;
+          });
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+      ;
+    }
+  }]);
+  return HeaderM;
+}();
+;
+var _default = new HeaderM();
+exports.default = _default;
+},{"../../components/menuBurger/img/mich0.png":"components/menuBurger/img/mich0.png","../../components/menuBurger/img/logo.svg":"components/menuBurger/img/logo.svg"}],"components/workWithUs/loginova/loginova.js":[function(require,module,exports) {
 "use strict";
 
 var _MenuBurger = _interopRequireDefault(require("../../menuBurger/MenuBurger"));
 var _swiper = _interopRequireDefault(require("../../swiper/swiper"));
 var _Feedback = _interopRequireDefault(require("../../feedback/Feedback"));
 var _LoginovaDetail = _interopRequireDefault(require("../../loginovaDetail/LoginovaDetail"));
+var _headerM = _interopRequireDefault(require("../../../components-m/header-m/header-m"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+_MenuBurger.default.render();
 _MenuBurger.default.clickOnBurger();
 _MenuBurger.default.removeBurger();
 _MenuBurger.default.changeImg();
@@ -10952,7 +11109,8 @@ _Feedback.default.addListenerDataClose();
 _Feedback.default.addListenerForDataInput();
 _Feedback.default.buttonInit();
 _LoginovaDetail.default.addListenerForAnimationSlider();
-},{"../../menuBurger/MenuBurger":"components/menuBurger/MenuBurger.js","../../swiper/swiper":"components/swiper/swiper.js","../../feedback/Feedback":"components/feedback/Feedback.js","../../loginovaDetail/LoginovaDetail":"components/loginovaDetail/LoginovaDetail.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_headerM.default.clickOnBurger();
+},{"../../menuBurger/MenuBurger":"components/menuBurger/MenuBurger.js","../../swiper/swiper":"components/swiper/swiper.js","../../feedback/Feedback":"components/feedback/Feedback.js","../../loginovaDetail/LoginovaDetail":"components/loginovaDetail/LoginovaDetail.js","../../../components-m/header-m/header-m":"components-m/header-m/header-m.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -10977,7 +11135,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54988" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56790" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
