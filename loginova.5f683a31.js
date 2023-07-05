@@ -10199,13 +10199,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ROOT_SWIPER_LOGINOVA = exports.ROOT_MODALS = exports.REACT_COMPONENT = void 0;
+exports.ROOT_SWIPER_LOGINOVA = exports.ROOT_MODAL = exports.REACT_COMPONENT = void 0;
 var REACT_COMPONENT = document.querySelector('.work-with-us__wrapper');
 exports.REACT_COMPONENT = REACT_COMPONENT;
 var ROOT_SWIPER_LOGINOVA = document.querySelector('.root_swiper_loginova');
 exports.ROOT_SWIPER_LOGINOVA = ROOT_SWIPER_LOGINOVA;
-var ROOT_MODALS = document.querySelectorAll('.ROOT_MODAL');
-exports.ROOT_MODALS = ROOT_MODALS;
+var ROOT_MODAL = document.getElementById('ROOT_MODAL');
+exports.ROOT_MODAL = ROOT_MODAL;
 },{}],"components/swiper/img/firstLoginova.png":[function(require,module,exports) {
 module.exports = "/firstLoginova.ba824123.png";
 },{}],"components/swiper/img/secondLoginova.png":[function(require,module,exports) {
@@ -10357,9 +10357,6 @@ var _close = _interopRequireDefault(require("../feedback//img/close.svg"));
 var _var = require("../../constants/var");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
@@ -10374,72 +10371,32 @@ var Feedback = /*#__PURE__*/function () {
     value: function render() {
       var htmlContent = " \n            <div class=\"modal\" id=\"modal-container\" data-close=\"true\">\n                <div class=\"modal__body _container\" >\n                    <img src=\"".concat(_close.default, "\" alt=\"close\" class=\"modal__close\" data-close=\"true\">\n                    <div class=\"modal__container\">\n                        <h3 class=\"modal__title\">\u041E\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u0441\u0432\u043E\u0438 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\u044B \u0438 \u043C\u044B \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u0441\u0432\u044F\u0436\u0435\u043C\u0441\u044F \u0441 \u0432\u0430\u043C\u0438.</h3>\n                        <form action=\"#\" class=\"modal__form\" id=\"form-free-lesson\">\n                            <input class=\"modal__input modal__input_name _modal-req\" placeholder=\"\u0418\u043C\u044F\" data-input=\"true\">\n                            <input class=\"modal__input modal__input_phone _modal-req\" placeholder=\"\u0422\u0435\u043B\u0435\u0444\u043E\u043D\" type=\"tel\" data-input=\"true\" maxlength=\"15\">\n                            <textarea class=\"modal__input modal__input_textarea _modal-req\" placeholder=\"\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435\" maxlength=\"140\" data-input=\"true\"></textarea>\n                            <button class=\"button-dinamic modal__dinamic-button\" id=\"modal-submit\">\u041E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443\n                                <div class=\"button-dinamic__1\"></div>\n                                <div class=\"button-dinamic__2\"></div>\n                                <div class=\"button-dinamic__3\"></div>\n                                <div class=\"button-dinamic__4\"></div>\n                                <div class=\"button-dinamic__5\"></div>\n                                <div class=\"button-dinamic__6\"></div>\n                                <div class=\"button-dinamic__7\"></div>\n                                <div class=\"button-dinamic__8\"></div>\n                            </button>\n                        </form>\n                    </div>\n                </div>\n            </div>\n            ");
       var htmlWrapper = "\n                <div class=\"modal__wrapper\">\n                    ".concat(htmlContent, "\n                </div>\n            ");
-      var _iterator = _createForOfIteratorHelper(_var.ROOT_MODALS),
-        _step;
-      try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var ROOT_MODAL = _step.value;
-          ROOT_MODAL.innerHTML = htmlWrapper;
-        }
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
-      }
+      _var.ROOT_MODAL.innerHTML = htmlWrapper;
     }
   }, {
     key: "open",
     value: function open() {
       this.render();
-      var modalWindows = document.querySelectorAll('.modal__body');
-      var _iterator2 = _createForOfIteratorHelper(modalWindows),
-        _step2;
-      try {
-        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-          var body = _step2.value;
-          body.classList.add('open');
-        }
-      } catch (err) {
-        _iterator2.e(err);
-      } finally {
-        _iterator2.f();
-      }
-      var modals = document.querySelectorAll('.modal');
-      var _iterator3 = _createForOfIteratorHelper(modals),
-        _step3;
-      try {
-        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-          var modal = _step3.value;
-          modal.classList.add('open');
-        }
-      } catch (err) {
-        _iterator3.e(err);
-      } finally {
-        _iterator3.f();
-      }
+      document.querySelector('.modal__body').classList.add('open');
+      document.querySelector('.modal').classList.add('open');
     }
   }, {
     key: "close",
     value: function close() {
-      var modals = document.querySelectorAll('.modal');
-      var modalWindows = document.querySelectorAll('.modal__body');
-      var _loop = function _loop(i) {
-        if (modals[i]) {
-          modalWindows[i].classList.remove('open');
-          modalWindows[i].parentElement.classList.remove('open');
-          modalWindows[i].classList.add('disappearance');
-          modalWindows[i].parentElement.classList.add('disappearance');
-          setTimeout(function () {
-            modalWindows[i].classList.remove('disappearance');
-            modalWindows[i].parentElement.classList.remove('disappearance');
-            _var.ROOT_MODALS[i].innerHTML = '';
-          }, 300);
-        }
-        ;
-      };
-      for (var i = 0; i < modals.length; i++) {
-        _loop(i);
+      var modal = document.querySelector('.modal');
+      var modalWindow = document.querySelector('.modal__body');
+      if (modal) {
+        modalWindow.classList.remove('open');
+        modalWindow.parentElement.classList.remove('open');
+        modalWindow.classList.add('disappearance');
+        modalWindow.parentElement.classList.add('disappearance');
+        setTimeout(function () {
+          modalWindow.classList.remove('disappearance');
+          modalWindow.parentElement.classList.remove('disappearance');
+          _var.ROOT_MODAL.innerHTML = '';
+        }, 300);
       }
+      ;
     }
   }, {
     key: "sendForm",
@@ -10450,7 +10407,6 @@ var Feedback = /*#__PURE__*/function () {
       modalSubmit.addEventListener('click', formSend);
       function formSend(event) {
         // async
-
         event.preventDefault();
         var error = formValidate(form);
         var formData = new FormData(form);
@@ -10481,18 +10437,7 @@ var Feedback = /*#__PURE__*/function () {
                 setTimeout(function () {
                   modalWindow.classList.remove('disappearance');
                   modalWindow.parentElement.classList.remove('disappearance');
-                  var _iterator4 = _createForOfIteratorHelper(_var.ROOT_MODALS),
-                    _step4;
-                  try {
-                    for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-                      var ROOT_MODAL = _step4.value;
-                      ROOT_MODAL.innerHTML = '';
-                    }
-                  } catch (err) {
-                    _iterator4.e(err);
-                  } finally {
-                    _iterator4.f();
-                  }
+                  _var.ROOT_MODAL.innerHTML = '';
                 }, 300);
               }
               ; // дублирование кода
@@ -11135,7 +11080,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56790" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63135" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

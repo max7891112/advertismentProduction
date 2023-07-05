@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"constants/var.js":[function(require,module,exports) {
+})({"XQ6K":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -130,33 +130,33 @@ var ROOT_SWIPER_LOGINOVA = document.querySelector('.root_swiper_loginova');
 exports.ROOT_SWIPER_LOGINOVA = ROOT_SWIPER_LOGINOVA;
 var ROOT_MODAL = document.getElementById('ROOT_MODAL');
 exports.ROOT_MODAL = ROOT_MODAL;
-},{}],"components/workWithUs/img/strata.png":[function(require,module,exports) {
-module.exports = "/strata.055535ed.png";
-},{}],"components/workWithUs/img/dreamGirl.jpg":[function(require,module,exports) {
-module.exports = "/dreamGirl.84c1a030.jpg";
-},{}],"components/workWithUs/img/skate.jpg":[function(require,module,exports) {
-module.exports = "/skate.282d2f37.jpg";
-},{}],"components/workWithUs/img/crazyGuitar.jpg":[function(require,module,exports) {
-module.exports = "/crazyGuitar.82eb3cad.jpg";
-},{}],"components/workWithUs/img/ultrafioletGirl.jpg":[function(require,module,exports) {
-module.exports = "/ultrafioletGirl.c47c0b3e.jpg";
-},{}],"components/workWithUs/img/japan.jpg":[function(require,module,exports) {
-module.exports = "/japan.1e358199.jpg";
-},{}],"components/workWithUs/img/dreamingGuy.png":[function(require,module,exports) {
-module.exports = "/dreamingGuy.9e3c1ede.png";
-},{}],"components/workWithUs/img/eye.png":[function(require,module,exports) {
-module.exports = "/eye.a3522c3b.png";
-},{}],"components/workWithUs/img/jumpGuy.png":[function(require,module,exports) {
-module.exports = "/jumpGuy.52f239d2.png";
-},{}],"components/workWithUs/img/oldPhone.png":[function(require,module,exports) {
-module.exports = "/oldPhone.8797b59f.png";
-},{}],"components/workWithUs/img/playingGuitar.png":[function(require,module,exports) {
-module.exports = "/playingGuitar.998bf05f.png";
-},{}],"components/workWithUs/img/play.svg":[function(require,module,exports) {
-module.exports = "/play.647adaf7.svg";
-},{}],"components/workWithUs/img/book.png":[function(require,module,exports) {
-module.exports = "/book.43b89172.png";
-},{}],"components/workWithUs/WorkWithUs.js":[function(require,module,exports) {
+},{}],"dR6f":[function(require,module,exports) {
+module.exports = "strata.fc1c2e7d.png";
+},{}],"jeM7":[function(require,module,exports) {
+module.exports = "dreamGirl.2ade30ef.jpg";
+},{}],"PH2N":[function(require,module,exports) {
+module.exports = "skate.0867d14c.jpg";
+},{}],"eiVA":[function(require,module,exports) {
+module.exports = "crazyGuitar.08954415.jpg";
+},{}],"BUYj":[function(require,module,exports) {
+module.exports = "ultrafioletGirl.d3363239.jpg";
+},{}],"mFuE":[function(require,module,exports) {
+module.exports = "japan.0c55567e.jpg";
+},{}],"Wszx":[function(require,module,exports) {
+module.exports = "dreamingGuy.d10dac76.png";
+},{}],"ECyU":[function(require,module,exports) {
+module.exports = "eye.f1f284c9.png";
+},{}],"RFaF":[function(require,module,exports) {
+module.exports = "jumpGuy.87c84eeb.png";
+},{}],"jkvx":[function(require,module,exports) {
+module.exports = "oldPhone.13b94063.png";
+},{}],"Yujq":[function(require,module,exports) {
+module.exports = "playingGuitar.d787f5ed.png";
+},{}],"EgKB":[function(require,module,exports) {
+module.exports = "play.2a4eab11.svg";
+},{}],"tA49":[function(require,module,exports) {
+module.exports = "book.a2814cc0.png";
+},{}],"rNyV":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -365,7 +365,7 @@ var WorkWithUs = /*#__PURE__*/function () {
 ;
 var _default = new WorkWithUs();
 exports.default = _default;
-},{"../../constants/var.js":"constants/var.js","../../libs/youtubeLightbox/youtubeLightbox.js":"libs/youtubeLightbox/youtubeLightbox.js","./img/strata.png":"components/workWithUs/img/strata.png","./img/dreamGirl.jpg":"components/workWithUs/img/dreamGirl.jpg","./img/skate.jpg":"components/workWithUs/img/skate.jpg","./img/crazyGuitar.jpg":"components/workWithUs/img/crazyGuitar.jpg","./img/ultrafioletGirl.jpg":"components/workWithUs/img/ultrafioletGirl.jpg","./img/japan.jpg":"components/workWithUs/img/japan.jpg","./img/dreamingGuy.png":"components/workWithUs/img/dreamingGuy.png","./img/eye.png":"components/workWithUs/img/eye.png","./img/jumpGuy.png":"components/workWithUs/img/jumpGuy.png","./img/oldPhone.png":"components/workWithUs/img/oldPhone.png","./img/playingGuitar.png":"components/workWithUs/img/playingGuitar.png","./img/play.svg":"components/workWithUs/img/play.svg","./img/book.png":"components/workWithUs/img/book.png"}],"libs/youtubeLightbox/youtubeLightbox.js":[function(require,module,exports) {
+},{"../../constants/var.js":"XQ6K","../../libs/youtubeLightbox/youtubeLightbox.js":"CQST","./img/strata.png":"dR6f","./img/dreamGirl.jpg":"jeM7","./img/skate.jpg":"PH2N","./img/crazyGuitar.jpg":"eiVA","./img/ultrafioletGirl.jpg":"BUYj","./img/japan.jpg":"mFuE","./img/dreamingGuy.png":"Wszx","./img/eye.png":"ECyU","./img/jumpGuy.png":"RFaF","./img/oldPhone.png":"jkvx","./img/playingGuitar.png":"Yujq","./img/play.svg":"EgKB","./img/book.png":"tA49"}],"CQST":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -487,174 +487,4 @@ var YoutubeLightbox = /*#__PURE__*/function () {
 }();
 var _default = new YoutubeLightbox();
 exports.default = _default;
-},{"../../constants/var.js":"constants/var.js","../../components/workWithUs/WorkWithUs.js":"components/workWithUs/WorkWithUs.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-var OldModule = module.bundle.Module;
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-  module.bundle.hotData = null;
-}
-module.bundle.Module = Module;
-var checkedAssets, assetsToAccept;
-var parent = module.bundle.parent;
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63135" + '/');
-  ws.onmessage = function (event) {
-    checkedAssets = {};
-    assetsToAccept = [];
-    var data = JSON.parse(event.data);
-    if (data.type === 'update') {
-      var handled = false;
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-          if (didAccept) {
-            handled = true;
-          }
-        }
-      });
-
-      // Enable HMR for CSS by default.
-      handled = handled || data.assets.every(function (asset) {
-        return asset.type === 'css' && asset.generated.js;
-      });
-      if (handled) {
-        console.clear();
-        data.assets.forEach(function (asset) {
-          hmrApply(global.parcelRequire, asset);
-        });
-        assetsToAccept.forEach(function (v) {
-          hmrAcceptRun(v[0], v[1]);
-        });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
-      }
-    }
-    if (data.type === 'reload') {
-      ws.close();
-      ws.onclose = function () {
-        location.reload();
-      };
-    }
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-      removeErrorOverlay();
-    }
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-      removeErrorOverlay();
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
-    }
-  };
-}
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-  if (overlay) {
-    overlay.remove();
-  }
-}
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID;
-
-  // html encode message and stack trace
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-  return overlay;
-}
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return [];
-  }
-  var parents = [];
-  var k, d, dep;
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-  return parents;
-}
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return;
-  }
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-function hmrAcceptCheck(bundle, id) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return;
-  }
-  if (!modules[id] && bundle.parent) {
-    return hmrAcceptCheck(bundle.parent, id);
-  }
-  if (checkedAssets[id]) {
-    return;
-  }
-  checkedAssets[id] = true;
-  var cached = bundle.cache[id];
-  assetsToAccept.push([bundle, id]);
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    return true;
-  }
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAcceptCheck(global.parcelRequire, id);
-  });
-}
-function hmrAcceptRun(bundle, id) {
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
-  }
-  delete bundle.cache[id];
-  bundle(id);
-  cached = bundle.cache[id];
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
-    return true;
-  }
-}
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","libs/youtubeLightbox/youtubeLightbox.js"], null)
-//# sourceMappingURL=/youtubeLightbox.0a1a9037.js.map
+},{"../../constants/var.js":"XQ6K","../../components/workWithUs/WorkWithUs.js":"rNyV"}]},{},["CQST"], null)
