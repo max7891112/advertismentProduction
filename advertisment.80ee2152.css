@@ -1431,7 +1431,7 @@ a {
   height: 470px;
 }
 .react-component__dinamic-block-container._increase .react-component__btn {
-  transform: translate(135px, 237px);
+  transform: translate(60px, 237px);
   z-index: 100;
 }
 .react-component__dinamic-block-container._increase .work-with-us {
@@ -1505,7 +1505,7 @@ a {
     margin: 95px 0 0 40px;
   }
 }
-@media (max-width: 1270px) {
+@media (max-width: 1274px) {
   .work-with-us__wrapper {
     margin: 0 auto;
   }
@@ -1518,16 +1518,33 @@ a {
   .react-component__img-wrapper {
     display: none;
   }
-  .react-component__img {
-    width: 350px;
+  .react-component__video-container {
+    width: 100%;
   }
   .react-component__text {
     margin: 0 auto;
   }
   .react-component__btn {
     margin: 50px auto;
+    display: none;
+  }
+  .react-component__dinamic-block-container._increase .react-component__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
+@media (max-width: 905px) {
+  .react-component__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.work-with-us__anti-center {
+  margin: 0 0 0 auto;
+  width: 100%;
+}
+
 .loginova-detail {
   width: 100%;
   position: relative;
@@ -2941,6 +2958,13 @@ a {
   .cases__wrapper-block {
     width: 200px;
   }
+  .cases .submassive {
+    transition: all 0.5s;
+    width: 80px;
+  }
+  .cases-animation__wrapper-block-active {
+    width: 320px;
+  }
 }
 @media (max-width: 950px) {
   .cases__items {
@@ -2948,6 +2972,16 @@ a {
   }
   .cases__wrapper-block {
     width: 150px;
+  }
+  .cases .submassive {
+    transition: all 0.5s;
+    width: 70px;
+  }
+  .cases__name {
+    font-size: 40px;
+  }
+  .cases-animation__wrapper-block-active {
+    width: 200px;
   }
 }
 .cases-child-rusalka {
@@ -4283,7 +4317,7 @@ a {
     letter-spacing: 6px;
   }
 }
-@media (min-width: 844px) {
+@media (min-width: 845px) {
   .main-page-m {
     display: none;
   }
@@ -4557,7 +4591,7 @@ a {
     justify-content: space-around;
   }
 }
-@media (min-width: 844px) {
+@media (min-width: 845px) {
   .our-service-m {
     display: none;
   }
@@ -4714,9 +4748,6 @@ a {
   .why-m .immutable-item {
     width: 122px;
   }
-  .why-m .active-item {
-    width: 195px;
-  }
 }
 .active-item {
   transition: all 0.5s;
@@ -4728,7 +4759,7 @@ a {
   width: 15px;
 }
 
-@media (min-width: 844px) {
+@media (min-width: 845px) {
   .why-m {
     display: none;
   }
@@ -4737,6 +4768,7 @@ a {
   .our-team__h2 {
     font-size: 30px;
     padding-top: 0;
+    line-height: 29px;
   }
   .our-team__text-box {
     display: none;
@@ -5505,7 +5537,7 @@ a {
 }
 
 .cases-m {
-  padding: 0 10px 0 10px;
+  padding: 30px 10px 0 10px;
   margin: 0 auto;
   position: relative;
   width: 100%;

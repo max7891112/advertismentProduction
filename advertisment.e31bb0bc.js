@@ -710,6 +710,7 @@ var WorkWithUs = /*#__PURE__*/function () {
       var malina = document.querySelector('.malina');
       var dragon = document.querySelector('.dragon');
       var allButtons = document.querySelectorAll('.work-with-us__item');
+      var wrappers = document.querySelectorAll('.work-with-us__wrapper');
       strata.addEventListener('click', function () {
         var _iterator = _createForOfIteratorHelper(allButtons),
           _step;
@@ -724,29 +725,25 @@ var WorkWithUs = /*#__PURE__*/function () {
         } finally {
           _iterator.f();
         }
-        strata.classList.add('_active');
-        strata.setAttribute('data-active', 'true');
-        _this.open(_strata.default, _book.default, "\u0418\u0442\u0430\u043B\u044C\u044F\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C \u0438 \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A \u043E\u0434\u0435\u0436\u0434\u044B, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0432 1974 \u0433\u043E\u0434\u0443. \n            \u042F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u043C \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u0441\u043A\u043E\u0439 \u043E\u0434\u0435\u0436\u0434\u044B \u0432\u043E \u0432\u0441\u0451\u043C \u043C\u0438\u0440\u0435. \u0428\u0442\u0430\u0431-\u043A\u0432\u0430\u0440\u0442\u0438\u0440\u0430 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0440\u0430\u0441\u043F\u043E\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F \u0432 \u0411\u0430\u0440\u0441\u0435\u043B\u043E\u043D\u0435.", 'https://www.youtube.com/watch?v=jyetqrX2hYA', "./components/workWithUs/loginova/loginova.html");
-      });
-      manue.addEventListener('click', function () {
-        var _iterator2 = _createForOfIteratorHelper(allButtons),
+        ;
+        var _iterator2 = _createForOfIteratorHelper(wrappers),
           _step2;
         try {
           for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-            var button = _step2.value;
-            button.classList.remove('_active');
-            button.setAttribute('data-active', 'false');
+            var wrapper = _step2.value;
+            wrapper.classList.remove('work-with-us__anti-center');
           }
         } catch (err) {
           _iterator2.e(err);
         } finally {
           _iterator2.f();
         }
-        manue.classList.add('_active');
-        manue.setAttribute('data-active', 'true');
-        _this.open(_dreamGirl.default, _oldPhone.default, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!", 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "./components/workWithUs/levina/levina.html");
+        ;
+        strata.classList.add('_active');
+        strata.setAttribute('data-active', 'true');
+        _this.open(_strata.default, _book.default, "\u0418\u0442\u0430\u043B\u044C\u044F\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C \u0438 \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A \u043E\u0434\u0435\u0436\u0434\u044B, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0432 1974 \u0433\u043E\u0434\u0443. \n            \u042F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u043C \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u0441\u043A\u043E\u0439 \u043E\u0434\u0435\u0436\u0434\u044B \u0432\u043E \u0432\u0441\u0451\u043C \u043C\u0438\u0440\u0435. \u0428\u0442\u0430\u0431-\u043A\u0432\u0430\u0440\u0442\u0438\u0440\u0430 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0440\u0430\u0441\u043F\u043E\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F \u0432 \u0411\u0430\u0440\u0441\u0435\u043B\u043E\u043D\u0435.", 'https://www.youtube.com/watch?v=jyetqrX2hYA', "./components/workWithUs/loginova/loginova.html");
       });
-      serenity.addEventListener('click', function () {
+      manue.addEventListener('click', function () {
         var _iterator3 = _createForOfIteratorHelper(allButtons),
           _step3;
         try {
@@ -760,29 +757,25 @@ var WorkWithUs = /*#__PURE__*/function () {
         } finally {
           _iterator3.f();
         }
-        serenity.classList.add('_active');
-        serenity.setAttribute('data-active', 'true');
-        _this.open(_skate.default, _dreamingGuy.default, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum\n             voluptates est eligendi possimus? Tempore!", 'https://www.youtube.com/watch?v=jyetqrX2hYA', "./components/workWithUs/larionov/larionov.html");
-      });
-      prostor.addEventListener('click', function () {
-        var _iterator4 = _createForOfIteratorHelper(allButtons),
+        ;
+        var _iterator4 = _createForOfIteratorHelper(wrappers),
           _step4;
         try {
           for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-            var button = _step4.value;
-            button.classList.remove('_active');
-            button.setAttribute('data-active', 'false');
+            var wrapper = _step4.value;
+            wrapper.classList.remove('work-with-us__anti-center');
           }
         } catch (err) {
           _iterator4.e(err);
         } finally {
           _iterator4.f();
         }
-        prostor.classList.add('_active');
-        prostor.setAttribute('data-active', 'true');
-        _this.open(_crazyGuitar.default, _playingGuitar.default, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "./components/workWithUs/belov/belov.html");
+        ;
+        manue.classList.add('_active');
+        manue.setAttribute('data-active', 'true');
+        _this.open(_dreamGirl.default, _oldPhone.default, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!", 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "./components/workWithUs/levina/levina.html");
       });
-      malina.addEventListener('click', function () {
+      serenity.addEventListener('click', function () {
         var _iterator5 = _createForOfIteratorHelper(allButtons),
           _step5;
         try {
@@ -796,24 +789,116 @@ var WorkWithUs = /*#__PURE__*/function () {
         } finally {
           _iterator5.f();
         }
-        malina.classList.add('_active');
-        malina.setAttribute('data-active', 'true');
-        _this.open(_ultrafioletGirl.default, _jumpGuy.default, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum voluptates \n            est eligendi possimus? Tempore!", 'https://www.youtube.com/watch?v=jyetqrX2hYA', '#');
-      });
-      dragon.addEventListener('click', function () {
-        var _iterator6 = _createForOfIteratorHelper(allButtons),
+        ;
+        var _iterator6 = _createForOfIteratorHelper(wrappers),
           _step6;
         try {
           for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
-            var button = _step6.value;
-            button.classList.remove('_active');
-            button.setAttribute('data-active', 'false');
+            var wrapper = _step6.value;
+            wrapper.classList.remove('work-with-us__anti-center');
           }
         } catch (err) {
           _iterator6.e(err);
         } finally {
           _iterator6.f();
         }
+        ;
+        serenity.classList.add('_active');
+        serenity.setAttribute('data-active', 'true');
+        _this.open(_skate.default, _dreamingGuy.default, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum\n             voluptates est eligendi possimus? Tempore!", 'https://www.youtube.com/watch?v=jyetqrX2hYA', "./components/workWithUs/larionov/larionov.html");
+      });
+      prostor.addEventListener('click', function () {
+        var _iterator7 = _createForOfIteratorHelper(allButtons),
+          _step7;
+        try {
+          for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
+            var button = _step7.value;
+            button.classList.remove('_active');
+            button.setAttribute('data-active', 'false');
+          }
+        } catch (err) {
+          _iterator7.e(err);
+        } finally {
+          _iterator7.f();
+        }
+        ;
+        var _iterator8 = _createForOfIteratorHelper(wrappers),
+          _step8;
+        try {
+          for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
+            var wrapper = _step8.value;
+            wrapper.classList.remove('work-with-us__anti-center');
+          }
+        } catch (err) {
+          _iterator8.e(err);
+        } finally {
+          _iterator8.f();
+        }
+        ;
+        prostor.classList.add('_active');
+        prostor.setAttribute('data-active', 'true');
+        _this.open(_crazyGuitar.default, _playingGuitar.default, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "./components/workWithUs/belov/belov.html");
+      });
+      malina.addEventListener('click', function () {
+        var _iterator9 = _createForOfIteratorHelper(allButtons),
+          _step9;
+        try {
+          for (_iterator9.s(); !(_step9 = _iterator9.n()).done;) {
+            var button = _step9.value;
+            button.classList.remove('_active');
+            button.setAttribute('data-active', 'false');
+          }
+        } catch (err) {
+          _iterator9.e(err);
+        } finally {
+          _iterator9.f();
+        }
+        ;
+        var _iterator10 = _createForOfIteratorHelper(wrappers),
+          _step10;
+        try {
+          for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
+            var wrapper = _step10.value;
+            wrapper.classList.remove('work-with-us__anti-center');
+          }
+        } catch (err) {
+          _iterator10.e(err);
+        } finally {
+          _iterator10.f();
+        }
+        ;
+        malina.classList.add('_active');
+        malina.setAttribute('data-active', 'true');
+        _this.open(_ultrafioletGirl.default, _jumpGuy.default, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum voluptates \n            est eligendi possimus? Tempore!", 'https://www.youtube.com/watch?v=jyetqrX2hYA', '#');
+      });
+      dragon.addEventListener('click', function () {
+        var _iterator11 = _createForOfIteratorHelper(allButtons),
+          _step11;
+        try {
+          for (_iterator11.s(); !(_step11 = _iterator11.n()).done;) {
+            var button = _step11.value;
+            button.classList.remove('_active');
+            button.setAttribute('data-active', 'false');
+          }
+        } catch (err) {
+          _iterator11.e(err);
+        } finally {
+          _iterator11.f();
+        }
+        ;
+        var _iterator12 = _createForOfIteratorHelper(wrappers),
+          _step12;
+        try {
+          for (_iterator12.s(); !(_step12 = _iterator12.n()).done;) {
+            var wrapper = _step12.value;
+            wrapper.classList.remove('work-with-us__anti-center');
+          }
+        } catch (err) {
+          _iterator12.e(err);
+        } finally {
+          _iterator12.f();
+        }
+        ;
         dragon.classList.add('_active');
         dragon.setAttribute('data-active', 'true');
         _this.open(_japan.default, _eye.default, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "#");
@@ -824,26 +909,43 @@ var WorkWithUs = /*#__PURE__*/function () {
     value: function addListenerForPrepareLightBox() {
       var _this2 = this;
       var target = document.querySelector('.react-component__link');
+      var strata = document.querySelector('.strata');
+      var manue = document.querySelector('.manue');
+      var serenity = document.querySelector('.serenity');
+      var prostor = document.querySelector('.prostor');
+      var malina = document.querySelector('.malina');
+      var wrapper = document.querySelector('.work-with-us__wrapper');
+      // const reactComponentImg = document.querySelector('.react-component__img');
+
       target.addEventListener('click', function () {
         var container = document.querySelector('.react-component__dinamic-block-container');
         if (!container.getAttribute('data-open-elem')) {
           container.classList.add('_increase');
           container.setAttribute('data-open-elem', 'true');
           document.querySelector('.work-with-us').classList.add('_increase');
+          console.log('CLICK 1');
+          wrapper.classList.add('work-with-us__anti-center');
         } else {
           _var.REACT_COMPONENT.innerHTML = "";
           if (strata.getAttribute('data-active') == 'true') {
             _this2.open(_strata.default, _book.default, "\u0418\u0442\u0430\u043B\u044C\u044F\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C \u0438 \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A \u043E\u0434\u0435\u0436\u0434\u044B, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0432 1974 \u0433\u043E\u0434\u0443. \n                        \u042F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u043C \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u0441\u043A\u043E\u0439 \u043E\u0434\u0435\u0436\u0434\u044B \u0432\u043E \u0432\u0441\u0451\u043C \u043C\u0438\u0440\u0435. \u0428\u0442\u0430\u0431-\u043A\u0432\u0430\u0440\u0442\u0438\u0440\u0430 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0440\u0430\u0441\u043F\u043E\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F \u0432 \u0411\u0430\u0440\u0441\u0435\u043B\u043E\u043D\u0435.", 'https://www.youtube.com/watch?v=jyetqrX2hYA', "./components/workWithUs/loginova/loginova.html");
+            wrapper.classList.remove('work-with-us__anti-center');
+            console.log('CLICK 2');
           } else if (manue.getAttribute('data-active') == 'true') {
             _this2.open(_dreamGirl.default, _oldPhone.default, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!", 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "./components/workWithUs/levina/levina.html");
+            wrapper.classList.remove('work-with-us__anti-center');
           } else if (serenity.getAttribute('data-active') == 'true') {
             _this2.open(_skate.default, _dreamingGuy.default, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum\n                        voluptates est eligendi possimus? Tempore!", 'https://www.youtube.com/watch?v=jyetqrX2hYA', "./components/workWithUs/larionov/larionov.html");
+            wrapper.classList.remove('work-with-us__anti-center');
           } else if (prostor.getAttribute('data-active') == 'true') {
             _this2.open(_crazyGuitar.default, _playingGuitar.default, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "./components/workWithUs/belov/belov.html");
+            wrapper.classList.remove('work-with-us__anti-center');
           } else if (malina.getAttribute('data-active') == 'true') {
             _this2.open(_ultrafioletGirl.default, _jumpGuy.default, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum voluptates \n                        est eligendi possimus? Tempore!", 'https://www.youtube.com/watch?v=jyetqrX2hYA', '#');
+            wrapper.classList.remove('work-with-us__anti-center');
           } else {
             _this2.open(_japan.default, _eye.default, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "#");
+            wrapper.classList.remove('work-with-us__anti-center');
           }
           ;
         }
@@ -12865,7 +12967,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63135" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59977" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
